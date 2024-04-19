@@ -4,16 +4,16 @@ const dotenv = require('dotenv').config();
 async function storeTask(request, response) {
 
     const params = Array(
-        request.body.nome,
+        request.body.name,
         request.body.email,
-        request.body.telefone,
-        request.body.senha,
+        request.body.cellphone,
+        request.body.password,
         request.body.cpf
     );
 
     const query = "INSERT INTO users_strex (nome, email, telefone, senha, cpf) VALUES(?,?,?,?,?)";
 
-    connection.query(query, params, (err, results) => {
+    connection.query(query, params, (err, results) => {        
         console.log(err, results);
         if(results) {
             response

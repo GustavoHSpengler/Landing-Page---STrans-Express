@@ -6,6 +6,7 @@ button.onclick = async function() {
     let cellphone = document.getElementById("telefone").value;
     let password = document.getElementById("senha").value;
     let cpf = document.getElementById("cpf").value;
+
     let data = {name, email, cellphone, password, cpf}
 
     const response = await fetch("http://localhost:3005/api/store/task", {
@@ -16,7 +17,7 @@ button.onclick = async function() {
 
     let content = await response.json();
 
-    if (content.sucess) {
+    if (content.success) {
         alert("Sucesso")
     } else {
         alert("Não")
