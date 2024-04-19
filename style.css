@@ -180,11 +180,55 @@ body{
     line-height: 100px; /* Ajuste conforme necessário */
 }
 
+form{
+    display: flex;
+    flex-direction: column;
+    width: auto;
+    background: rgba(0, 0, 0, 0.3);
+    h1 {
+        font-size: 50px; 
+        margin-top: 2vh;
+        align-self: center;
+    }
+    div{
+        display: flex;
+        flex-direction: column;
+        align-self: center;
+        label {
+            font-size: 30px;
+            margin-top: 15px;
+        }
+        input {
+            width: 900px;
+            height: 70px;
+            margin-top: 10px;
+            padding: 0% 3%;
+            background: var(--cor_de_fundo1);
+            border-radius: 55px;
+            border: none;
+            font-size: 20px;
+        }
+    }
+    button {
+        width: 570px;
+        height: 97px;
+        background: #FF9162;
+        border: 1px solid #000000;
+        font-family: 'K2D';
+        font-style: normal;
+        font-size: 40px;
+        line-height: 52px;
+        margin-top: 10px;
+        align-items: center;
+        text-align: center;
+        color: #000000;
+    }
+}
+
 
 footer {
     display: flex;
     flex-direction: column;
-    margin-top: 20px;
     nav {
         display: flex;
         flex-direction: column;
